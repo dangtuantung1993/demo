@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<title>Todo List</title>
+	<script type="text/javascript">
+
+		function addNewTask(){
+			 var newItem = document.getElementById('newTask').value;
+			alert(newItem);
+		}
+	</script>
 </head>
 <body>
 <h1>Todo List</h1>
-<input type="newTask" type="text" placeholder="Nhập công việc" style="width :90%;"/><button id="addNew">Thêm mới</button>
-<ul id="listWork">
+<input id="newTask" type="text" placeholder="Nhập công việc" style="width :90%;"/><button id="addNew" onclick="addNewTask()">Thêm mới</button>
+<ul id='listWork'>
 	<li>Chạy tool<button>Done</button><button>Remove</button></li>
 	<li>Học bài<button>Done</button><button>Remove</button></li>
 	<li>Quẩy LOL<button>Done</button><button>Remove</button></li>
